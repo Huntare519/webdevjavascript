@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script>
+      function multiplyBy() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("firstNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+      }
+
+      function divideBy() {
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("firstNumber").value;
+        document.getElementById("result").innerHTML = num1 / num2;
+      }
+    </script>
+    <title>
+      JavaScript program to calculate multiplication and division of two numbers
+    </title>
+    <style type="text/css">
+      body {
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      1st Number: <input type="text" id="firstNumber" /><br />
+      2st Number: <input type="text" id="secondNumber" /><br />
+
+      <button
+        type="button"
+        class="btn btn-dark"
+        onClick="multiplyBy()"
+        value="Multiply"
+      >
+        Multiply
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger btn-lg"
+        onClick="divideBy()"
+        value="Divide"
+      >
+        Divide
+      </button>
+    </form>
+    <p>
+      The Result Is: <br />
+      <span id="result"> </span>
+    </p>
+  </body>
+</html>
